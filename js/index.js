@@ -89,6 +89,18 @@ product.textContent = (siteContent["main-content"]["product-h4"])
 const productContent  = document.querySelectorAll('.text-content p')[3];
 productContent.textContent = (siteContent["main-content"]["product-content"])
 
+const contacth4 = document.querySelector('.contact h4');
+contacth4.textContent = (siteContent["contact"]["contact-h4"])
+
+const contact1  = document.querySelectorAll('.contact p')[0];
+contact1.textContent = (siteContent["contact"]["address"])
+
+const contact2  = document.querySelectorAll('.contact p')[1];
+contact2.textContent = (siteContent["contact"]["phone"])
+
+const contact3  = document.querySelectorAll('.contact p')[2];
+contact3.textContent = (siteContent["contact"]["email"])
+
 const foot= document.querySelector('footer p');
 foot.textContent = (siteContent["footer"]["copyright"])
 
@@ -101,20 +113,16 @@ const parentnav1new = document.querySelector('nav');
 parentnav1new.appendChild(nav1new);
 
 
+const  nav2new= document.createElement('a');
+nav2new.textContent = "boo!";
 
+const parentnav2new = document.querySelector('nav');
 
-
-
-
-
-
-
-
-
-
-
+parentnav1new.prepend(nav2new);
 
 const clr = document.querySelectorAll("a");
+
+
 
 
 clr.forEach( element => {
